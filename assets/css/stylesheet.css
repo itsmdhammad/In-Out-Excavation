@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #CCB404;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styling - Main Header Containr */
+.header {
+    margin: 0 auto;
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20%;;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80%;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+    padding: 0px 20px;
+}
+
+.header-nav ul li a:hover {
+    transform: translateY(-5px);
+    color: #CCB404;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    min-width: 20%;
+    justify-content: end;
+}
+
+.header-contact-btn {
+    background-color: #CCB404;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header-contact-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+.header-contact-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.header-contact-btn a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header - Responsive Mobile Screen 769 max width */
+
+@media (max-width: 769px) {
+    .header {
+        margin: 0% auto;;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 10px auto;
+    }
+
+    .header-logo{
+        width: 50%;
+        justify-content: start;
+    }
+
+    .header-nav ul {
+        display: none;
+    }
+
+    .header-contact {
+        width: 50%;
+    }
+}
