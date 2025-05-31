@@ -120,3 +120,16 @@ a:hover {
         width: 50%;
     }
 }
+
+/* Hero Section CSS */
+
+.hero-section {
+    width: 100%;
+    background-image: url('/img/hero-section-background.webp');
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
